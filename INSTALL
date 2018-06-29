@@ -1,0 +1,3 @@
+
+yum -y install openssl openssl-devel
+yum -y boost boost-devel

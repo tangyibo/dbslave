@@ -1,0 +1,24 @@
+{
+    "mysql": {
+        "host": "172.16.90.210",
+        "port": 3306,
+        "username": "tangyibo",
+        "password": "tangyibo",
+        "dbname": "tangyibo"
+    },
+    "rabbitmq": {
+        "connectstr": "test:123456@172.16.56.112:5672",
+        "exchange": "tangyibo",
+        "queue": "tangyibo_queue",
+        "routing_key": "tangyibo_queue"
+    },
+    "tables": [
+        {
+            "name": "test_table*",
+            "key": "id"
+        }
+
+    ]
+}
+
+

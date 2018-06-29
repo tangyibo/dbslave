@@ -1,0 +1,39 @@
+mkdir -p bin/debug/;
+for val in src;do \
+	  mkdir -p bin/debug/${val}; \
+	done;
+Building file: src/main.cpp
+Invoking:GCC C++ Compiler
+g++ -O0 -g -Wall -c -fmessage-length=0 -I./include/mysql/ -MMD -MP -MF"bin/debug/src/main.d" -MT"bin/debug/src/main.d" -o"bin/debug/src/main.o" "src/main.cpp"
+Finished building: src/main.cpp
+ 
+Building file: src/value.cpp
+Invoking:GCC C++ Compiler
+g++ -O0 -g -Wall -c -fmessage-length=0 -I./include/mysql/ -MMD -MP -MF"bin/debug/src/value.d" -MT"bin/debug/src/value.d" -o"bin/debug/src/value.o" "src/value.cpp"
+Finished building: src/value.cpp
+ 
+Building file: src/test_mysqlslave.cpp
+Invoking:GCC C++ Compiler
+g++ -O0 -g -Wall -c -fmessage-length=0 -I./include/mysql/ -MMD -MP -MF"bin/debug/src/test_mysqlslave.d" -MT"bin/debug/src/test_mysqlslave.d" -o"bin/debug/src/test_mysqlslave.o" "src/test_mysqlslave.cpp"
+Finished building: src/test_mysqlslave.cpp
+ 
+Building file: src/logparser.cpp
+Invoking:GCC C++ Compiler
+g++ -O0 -g -Wall -c -fmessage-length=0 -I./include/mysql/ -MMD -MP -MF"bin/debug/src/logparser.d" -MT"bin/debug/src/logparser.d" -o"bin/debug/src/logparser.o" "src/logparser.cpp"
+Finished building: src/logparser.cpp
+ 
+Building file: src/logevent.cpp
+Invoking:GCC C++ Compiler
+g++ -O0 -g -Wall -c -fmessage-length=0 -I./include/mysql/ -MMD -MP -MF"bin/debug/src/logevent.d" -MT"bin/debug/src/logevent.d" -o"bin/debug/src/logevent.o" "src/logevent.cpp"
+Finished building: src/logevent.cpp
+ 
+Building file: src/database.cpp
+Invoking:GCC C++ Compiler
+g++ -O0 -g -Wall -c -fmessage-length=0 -I./include/mysql/ -MMD -MP -MF"bin/debug/src/database.d" -MT"bin/debug/src/database.d" -o"bin/debug/src/database.o" "src/database.cpp"
+Finished building: src/database.cpp
+ 
+Building target: bin/debug/test_mysql_slave
+Invoking:GCC C++ Linker
+g++   -lmysqlclient -lpthread -o"bin/debug/test_mysql_slave" bin/debug/src/main.o bin/debug/src/value.o bin/debug/src/test_mysqlslave.o bin/debug/src/logparser.o bin/debug/src/logevent.o bin/debug/src/database.o -L/usr/local/whistle/mysql/lib/
+Finished building target: bin/debug/test_mysql_slave
+ 

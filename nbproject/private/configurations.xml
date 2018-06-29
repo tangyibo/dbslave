@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="bin">
+        <df name="lib">
+        </df>
+        <df name="log">
+          <df name="2018_06">
+          </df>
+        </df>
+      </df>
+      <df name="include">
+        <df name="amqpcpp">
+          <in>AMQPcpp.h</in>
+        </df>
+        <df name="mysql">
+          <df name="mysql">
+            <df name="psi">
+              <in>mysql_file.h</in>
+              <in>mysql_thread.h</in>
+              <in>psi.h</in>
+              <in>psi_abi_v1.h</in>
+              <in>psi_abi_v2.h</in>
+            </df>
+            <in>client_plugin.h</in>
+            <in>innodb_priv.h</in>
+            <in>plugin.h</in>
+            <in>plugin_audit.h</in>
+            <in>plugin_auth.h</in>
+            <in>plugin_auth_common.h</in>
+            <in>plugin_ftparser.h</in>
+            <in>service_my_snprintf.h</in>
+            <in>service_thd_alloc.h</in>
+            <in>service_thd_wait.h</in>
+            <in>service_thread_scheduler.h</in>
+            <in>services.h</in>
+            <in>thread_pool_priv.h</in>
+          </df>
+          <in>decimal.h</in>
+          <in>errmsg.h</in>
+          <in>keycache.h</in>
+          <in>m_ctype.h</in>
+          <in>m_string.h</in>
+          <in>my_alloc.h</in>
+          <in>my_attribute.h</in>
+          <in>my_compiler.h</in>
+          <in>my_config.h</in>
+          <in>my_dbug.h</in>
+          <in>my_dir.h</in>
+          <in>my_getopt.h</in>
+          <in>my_global.h</in>
+          <in>my_list.h</in>
+          <in>my_net.h</in>
+          <in>my_pthread.h</in>
+          <in>my_sys.h</in>
+          <in>my_xml.h</in>
+          <in>mysql.h</in>
+          <in>mysql_com.h</in>
+          <in>mysql_embed.h</in>
+          <in>mysql_time.h</in>
+          <in>mysql_version.h</in>
+          <in>mysqld_ername.h</in>
+          <in>mysqld_error.h</in>
+          <in>plugin.h</in>
+          <in>plugin_audit.h</in>
+          <in>plugin_ftparser.h</in>
+          <in>sql_common.h</in>
+          <in>sql_state.h</in>
+          <in>sslopt-case.h</in>
+          <in>sslopt-longopts.h</in>
+          <in>sslopt-vars.h</in>
+          <in>typelib.h</in>
+        </df>
+        <df name="rabbitmq-c">
+          <in>amqp.h</in>
+          <in>amqp_framing.h</in>
+          <in>amqp_ssl_socket.h</in>
+          <in>amqp_tcp_socket.h</in>
+        </df>
+      </df>
+      <df name="lib">
+      </df>
+      <df name="src">
+        <df name="jsoncpp">
+          <in>autolink.h</in>
+          <in>config.h</in>
+          <in>features.h</in>
+          <in>forwards.h</in>
+          <in>json.h</in>
+          <in>json_batchallocator.h</in>
+          <in>json_reader.cpp</in>
+          <in>json_value.cpp</in>
+          <in>json_writer.cpp</in>
+          <in>reader.h</in>
+          <in>value.h</in>
+          <in>writer.h</in>
+        </df>
+        <in>columndesc.h</in>
+        <in>database.cpp</in>
+        <in>database.h</in>
+        <in>exceptions.h</in>
+        <in>log4z.cpp</in>
+        <in>log4z.h</in>
+        <in>logevent.cpp</in>
+        <in>logevent.h</in>
+        <in>logparser.cpp</in>
+        <in>logparser.h</in>
+        <in>main.cpp</in>
+        <in>memblock.cpp</in>
+        <in>memblock.h</in>
+        <in>mysqlslave.cpp</in>
+        <in>mysqlslave.h</in>
+        <in>rabbitmq.cpp</in>
+        <in>rabbitmq.h</in>
+        <in>test_mysqlslave.cpp</in>
+        <in>value.cpp</in>
+        <in>value.h</in>
+      </df>
+    </df>
+    <df root="." name="1">
+      <df name="bin">
+        <df name="lib">
+        </df>
+        <df name="log">
+          <df name="2018_06">
+          </df>
+        </df>
+      </df>
+      <df name="include">
+        <df name="amqpcpp">
+        </df>
+        <df name="mysql">
+          <df name="mysql">
+            <df name="psi">
+            </df>
+          </df>
+        </df>
+        <df name="rabbitmq-c">
+        </df>
+      </df>
+      <df name="lib">
+      </df>
+      <df name="src">
+        <df name="jsoncpp">
+        </df>
+      </df>
+    </df>
+    <df root="src" name="2">
+      <df name="jsoncpp">
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
